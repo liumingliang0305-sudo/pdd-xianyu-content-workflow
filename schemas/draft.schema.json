@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Generated product copy draft",
+  "description": "Project contract v0.1; validate again in Python after model output.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_revision", "reference_revision", "prompt_version", "variants"],
+  "properties": {
+    "source_revision": {"type": "string", "minLength": 1},
+    "reference_revision": {"type": "string", "minLength": 1},
+    "prompt_version": {"type": "string", "minLength": 1},
+    "variants": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["variant_id", "title", "body", "claims"],
+        "properties": {
+          "variant_id": {"enum": ["concise", "scenario", "faq"]},
+          "title": {"type": "string", "minLength": 1, "maxLength": 50},
+          "body": {"type": "string", "minLength": 1, "maxLength": 1500},
+          "claims": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 30,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["text", "fact_ids"],
+              "properties": {
+                "text": {"type": "string", "minLength": 1, "maxLength": 500},
+                "fact_ids": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 20,
+                  "uniqueItems": true,
+                  "items": {"type": "string", "minLength": 1}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

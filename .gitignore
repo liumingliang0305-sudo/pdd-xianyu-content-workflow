@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+data/
+state/
+cookies/
+credentials/
+logs/
+artifacts/
+*.sqlite3
+*.zip
