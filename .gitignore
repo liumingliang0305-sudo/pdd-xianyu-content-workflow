@@ -12,5 +12,6 @@ cookies/
 credentials/
 logs/
 artifacts/
+.local/
 *.sqlite3
 *.zip

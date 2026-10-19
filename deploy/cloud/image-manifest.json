@@ -1,0 +1,10 @@
+{
+  "prepared_on": "2026-10-19",
+  "image": "docker.n8n.io/n8nio/n8n:2.43.8",
+  "platform": "linux/amd64",
+  "image_id": "sha256:bdeac5e52cc454ced4a292832771bb6e3166750f247371f82414cdd99d5361e1",
+  "source_index_digest": "sha256:a18edcf018198b33b5488fb47ededafe11e0b10d28f65b9535b7c447c9ce3b2c",
+  "archive": "n8n-2.43.8-amd64.tar.gz",
+  "archive_sha256": "e793d088275d3137ccd9d6f8eca6c5ca1eb0c7ac4198525978a38f23aaf2757c",
+  "archive_bytes": 271861002
+}
