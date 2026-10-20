@@ -1,0 +1,15 @@
+{
+  "store": {"initDataObj": {"goods": {
+    "goods_id": "100000000001",
+    "goods_name": "测试夹具 · 收纳盒（非真实商品）",
+    "top_gallery": [{"url": "https://img.pddpic.com/test/main.png"}],
+    "detail_gallery": [{"url": "https://img.pddpic.com/test/detail.png"}],
+    "goods_desc": "请核对尺寸，远离火源。",
+    "goods_property": [{"key": "材质", "values": ["PP"]}],
+    "sku": [
+      {"sku_id": "101", "specs": [{"spec_key": "容量", "spec_value": "小号"}], "group_price": 1290, "normal_price": 1590, "quantity": 0, "thumb_url": "https://img.pddpic.com/test/main.png", "group_tip": "拼团价"},
+      {"sku_id": "102", "specs": [{"spec_key": "容量", "spec_value": "大号"}], "group_price": 2290, "normal_price": 2590, "quantity": 5, "thumb_url": "https://img.pddpic.com/test/sku.png"}
+    ],
+    "recommendations": [{"goods_id": "999", "goods_name": "不应混入的推荐商品", "top_gallery": ["https://img.pddpic.com/test/recommendation.png"]}]
+  }}}
+}

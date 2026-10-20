@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>拼多多 · 商品资料台</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script defer src="/static/app.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="/">品<span> / </span>商品资料台</a><div class="header-meta">拼多多采集 <span class="tag">MVP 01</span><button id="logout" class="quiet" hidden>退出</button></div></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">从一个链接开始</p><h1>把商品资料，整理到一起。</h1><p class="muted">标题、规格价格、商品图片、注意事项。保留来源，下载到本机。</p></div><span class="local-indicator">● 本地运行</span></section>
+    <div id="message" role="status" aria-live="polite" hidden></div>
+    <section id="login-panel" class="panel login-panel" hidden>
+      <h2>连接本机工作台</h2><p class="muted">首次启动后，在终端运行 <code>cat .local/pdd-mvp/access-token</code>，将口令粘贴到下方。</p>
+      <form id="login-form"><label for="token">访问口令</label><div class="inline"><input id="token" type="password" required autocomplete="current-password" placeholder="本机访问口令"><button class="primary">进入工作台</button></div></form>
+    </section>
+    <div id="workspace" hidden>
+      <section class="panel import-panel">
+        <form id="import-form"><label for="share">拼多多商品链接 / 分享文本</label><textarea id="share" rows="3" maxlength="8000" required placeholder="粘贴商品链接，或包含链接的整段分享文本…"></textarea><div class="import-footer"><p class="muted">一次一个商品。采集时会打开独立浏览器，遇到登录或验证请在该窗口处理。</p><button class="primary" id="collect">解析并采集 <span aria-hidden="true">↗</span></button></div></form>
+      </section>
+      <div class="work-grid"><aside><div class="section-heading"><h2>采集记录</h2><button id="refresh" class="quiet">刷新</button></div><div id="job-list"></div></aside><section id="detail" class="panel detail-panel"><div class="empty"><span class="empty-mark">↗</span><h2>准备好第一件商品</h2><p>粘贴链接开始采集。完成后，这里会展示四类商品资料。</p><div class="empty-grid"><span>01 标题</span><span>02 规格价格</span><span>03 商品图片</span><span>04 注意事项</span></div></div></section></div>
+    </div>
+    <footer>资料仅反映采集时页面可见内容 · 未取得的字段会明确标注 · 图片下载不代表取得发布授权</footer>
+  </main>
+</body>
+</html>
